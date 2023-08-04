@@ -58,9 +58,9 @@ These are the sources for syscalls that query the transaction for input cells, o
 | Const No.          | C Example               | Description                                                                                 |
 | ------------------ | ----------------------- | ------------------------------------------------------------------------------------------- |
 | 0x1                | CKB_SOURCE_INPUT        | All input cells in the transaction.                                                         |
-| 0x0100000000000001 | CKB_SOURCE_GROUP_INPUT  | Only the input cells in the transaction using the same script as currently running script.  |
+| 0x0100000000000001 | CKB_SOURCE_GROUP_INPUT  | Only the input cells in the transaction using the same script as the currently running script.  |
 | 2                  | CKB_SOURCE_OUTPUT       | All output cells in the transaction.                                                        |
-| 0x0100000000000002 | CKB_SOURCE_GROUP_OUTPUT | Only the output cells in the transaction using the same script as currently running script. |
+| 0x0100000000000002 | CKB_SOURCE_GROUP_OUTPUT | Only the output cells in the transaction using the same script as the currently running script. |
 | 3                  | CKB_SOURCE_CELL_DEP     | All dep cells in the transaction.                                                           |
 | 4                  | CKB_SOURCE_HEADER_DEP   | All header deps in the transaction.                                                         |
 
@@ -74,8 +74,8 @@ These are the field specifiers for syscalls that request a specific field of a c
 | 1         | CKB_CELL_FIELD_DATA_HASH         | The hash of the data within the data field of the cell.                |
 | 2         | CKB_CELL_FIELD_LOCK              | The lock script of the cell.                                           |
 | 3         | CKB_CELL_FIELD_LOCK_HASH         | The hash of the lock script of the cell.                               |
-| 4         | CKB_CELL_FIELD_TYPE              | The lock script of the cell.                                           |
-| 5         | CKB_CELL_FIELD_TYPE_HASH         | The hash of the lock script of the cell.                               |
+| 4         | CKB_CELL_FIELD_TYPE              | The type script of the cell.                                           |
+| 5         | CKB_CELL_FIELD_TYPE_HASH         | The hash of the type script of the cell.                               |
 | 6         | CKB_CELL_FIELD_OCCUPIED_CAPACITY | The amount of capacity (CKB) that is currently being used by the cell. |
 
 ### Header Fields
